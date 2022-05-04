@@ -27,10 +27,16 @@ class Main
             $line1 = $firstLine->lengthOfLine();
             $secondLine = new LineComparison($x3, $y3, $x4, $y4);
             $line2 = $secondLine->lengthOfLine();
+            echo "first line :" . round($line1,3) . "\n" . "second line : " . round($line2,3) . "\n";
+
             if ($line1 == $line2) {
                 echo "Lines are Equal";
-            } else {
-                echo "Lines are not Equal";
+            }
+            else if ($line1 > $line2) {
+                echo "first line is greater than second line ";
+            }
+            else {
+                echo "second line is greater than first line";
             }
         } else {
             echo "Please Enter Valid Input";
